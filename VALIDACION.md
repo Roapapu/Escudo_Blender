@@ -26,6 +26,7 @@ Revisión realizada el 21 de octubre de 2026.
 - Se ajustó la distancia inicial de cámara para mostrar el escudo completo.
 - Etiquetas en español, estados `aria-pressed`, mensajes `aria-live` y estilos de foco para teclado.
 - Biblioteca model-viewer 4.4.0 incluida en `vendor/`, sin depender de un CDN durante la visita.
+- El despliegue final de GitHub Pages terminó correctamente. Los recursos principales responden HTTP 200 y coinciden con los archivos locales (normalizando los saltos de línea de los archivos de texto).
 
 ## Alcance de las comprobaciones
 
