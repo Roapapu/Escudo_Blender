@@ -1,0 +1,11 @@
+{
+  "triangles": 4272,
+  "mesh_objects": 58,
+  "materials": [
+    "Madera",
+    "Acero",
+    "Bronce"
+  ],
+  "texture_resolution": 1024,
+  "glb_bytes": 4571676
+}

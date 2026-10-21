@@ -1,0 +1,9 @@
+{
+  "name": "escudo-solar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"validate": "node scripts/validate.mjs", "serve": "node scripts/serve.mjs"},
+  "dependencies": {"@google/model-viewer": "4.4.0"},
+  "devDependencies": {"gltf-validator": "2.0.0-dev.3.10"}
+}

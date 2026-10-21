@@ -1,0 +1,5 @@
+node_modules/
+.tmp/
+*.log
+*.blend1
+__pycache__/

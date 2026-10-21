@@ -1,0 +1,16 @@
+{
+  "gltf_errors": 0,
+  "triangles": 4272,
+  "below_8000_triangles": true,
+  "below_10MiB": true,
+  "materials": [
+    "Acero",
+    "Bronce",
+    "Madera"
+  ],
+  "three_materials": true,
+  "all_primitives_have_UVs": true,
+  "all_primitives_have_tangents": true,
+  "all_materials_have_PBR_maps": true,
+  "exactly_three_buttons": true
+}

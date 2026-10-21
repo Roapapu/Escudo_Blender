@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151c1b">
+  <meta name="description" content="Un escudo medieval original de madera, acero y bronce. Explora el modelo 3D y transforma sus materiales en tiempo real.">
+  <title>Escudo Solar · Armería interactiva</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23bc995f' d='M8 5h48v31L32 61 8 36Z'/%3E%3Ccircle cx='32' cy='26' r='12' fill='%23232c29'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="vendor/model-viewer.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="#">◈ <span>AR SOLIS</span></a><span class="edition">ARMERÍA DIGITAL <i>/</i> PIEZA 001</span><a href="https://github.com/Roapapu/Escudo_Blender" target="_blank" rel="noopener">Ver proyecto ↗</a></header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow"><span></span> OBJETO MEDIEVAL · ESTUDIO PBR</p>
+      <h1 id="title">Forjado para<br>resistir.<br><em>Hecho para explorar.</em></h1>
+      <p class="description">Madera, acero y bronce bajo el signo del sol. Una pieza de armería que puedes observar desde cualquier ángulo y transformar con tus manos.</p>
+      <div class="object-label"><span>01 — ESCUDO SOLAR</span><span>MODELO 3D ORIGINAL</span></div>
+      <div class="controls" role="group" aria-label="Personaliza los materiales">
+        <button id="steel" type="button" aria-pressed="false" disabled><span class="control-icon">◐</span><span>Acero oscuro<small>Cambia el acabado del cerco</small></span><span class="toggle" aria-hidden="true"></span></button>
+        <button id="wear" type="button" aria-pressed="false" disabled><span class="control-icon">⌁</span><span>Huella del tiempo<small>Alterna texturas limpias y gastadas</small></span><span class="toggle" aria-hidden="true"></span></button>
+        <button id="relief" type="button" aria-pressed="true" disabled><span class="control-icon">☼</span><span>Relieve del bronce<small>Activa el detalle del normal map</small></span><span class="toggle" aria-hidden="true"></span></button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite">Preparando la pieza…</p>
+    </section>
+    <section class="showcase" aria-label="Visor 3D del escudo">
+      <div class="stage-top"><span>COLECCIÓN / SOL INVICTUS</span><span class="live"><i></i> TIEMPO REAL</span></div>
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="sun-mark" aria-hidden="true">☼</span>
+      <model-viewer id="shield" src="assets/escudo.glb" poster="renders/escudo-frente.png" alt="Escudo medieval con tablones de madera, borde de acero remachado y un sol de bronce. Gira para ver el agarre trasero." camera-controls touch-action="pan-y" camera-orbit="-18deg 78deg 3.2m" min-camera-orbit="auto 20deg 1.5m" max-camera-orbit="auto 160deg 5m" field-of-view="32deg" shadow-intensity="0.75" shadow-softness="1" exposure="1.2" environment-image="neutral" interaction-prompt="auto" loading="eager" reveal="auto">
+        <div slot="progress-bar" class="loading-track"><div id="progress"></div></div>
+      </model-viewer>
+      <div class="stage-bottom"><span>↔ ARRASTRA PARA GIRAR <b>·</b> SCROLL PARA ACERCAR</span><span>360°</span></div>
+    </section>
+    <section class="specs" aria-label="Detalles de la pieza">
+      <div><span class="spec-number">I</span><p>Madera<small>Tablones y empuñadura</small></p></div>
+      <div><span class="spec-number">II</span><p>Acero<small>Cerco y refuerzos</small></p></div>
+      <div><span class="spec-number">III</span><p>Bronce<small>Sol y remaches</small></p></div>
+      <div class="technical"><span>OPTIMIZADO PARA WEB</span><p id="metrics">PBR 1K <b>·</b> GLB</p><a href="assets/escudo.glb" download>Descargar modelo ↓</a></div>
+    </section>
+  </main>
+  <footer><span>AR SOLIS <i>/</i> Una exploración de materia y luz.</span><span>Modelado en Blender · Visor de Google <a href="https://modelviewer.dev/" target="_blank" rel="noopener">model-viewer ↗</a></span></footer>
+</body>
+</html>
