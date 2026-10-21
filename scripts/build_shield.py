@@ -16,6 +16,7 @@ def save_map(name, data, color=False):
     a=np.ones((N,N,4),np.float32)
     a[:,:,:3]=data[:,:,None] if data.ndim==2 else data
     im=bpy.data.images.new(name,width=N,height=N,alpha=False)
+    im.use_fake_user=True
     im.colorspace_settings.name='sRGB' if color else 'Non-Color'
     im.pixels.foreach_set(a.ravel()); im.filepath_raw=os.path.join(ROOT,'textures',name+'.png'); im.file_format='PNG'; im.save()
     return im
